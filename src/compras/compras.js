@@ -19,10 +19,10 @@ const calcularTotal = (ferramentas, comprar) => {
         throw new Error(`Nenhuma ferramenta desejada encontrada.`); 
     }
 
-    for (let indiceNomes = 0; indiceNomes < ferramentasEncontradas.length; indiceNomes++) {
+    for(let indiceNomes = 0; indiceNomes < ferramentasEncontradas.length; indiceNomes++){
         somaPrecos += ferramentasEncontradas[indiceNomes].preco;
         nomes += ferramentasEncontradas[indiceNomes].nome;
-        if (indiceNomes < (ferramentasEncontradas.length - 1)) {
+        if(indiceNomes < (ferramentasEncontradas.length - 1)){
             nomes += ", ";
         }
     }
